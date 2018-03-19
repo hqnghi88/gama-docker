@@ -1,7 +1,7 @@
 
 FROM ubuntu:17.10 as builder
 
-RUN apt update && apt install -y git maven && apt install apt-utils
+RUN apt update && apt install -y git maven && apt-get install -y --no-install-recommends apt-utils
 #RUN apt update && apt install -y wget unzip
 WORKDIR /
 #RUN mkdir /gama && cd /gama && wget https://github.com/gama-platform/gama/archive/master.zip
